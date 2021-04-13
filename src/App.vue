@@ -1,77 +1,10 @@
 <template>
-  <div class="flex h-screen bg-gray-200 text-gray-900" id="app">
+  <div class="flex h-screen bg-gray-200 text-gray-600" id="app">
     <div
       class="flex overflow-hidden bg-white container my-12 m-auto rounded-lg p-8 shadow-2xl"
     >
       <div class="w-1/4 p-8">
-        <div class="border-b-2 border-gray-100 pb-4">
-          <h1 class="text-2xl font-medium text-pink-600">
-            Aid<span class="text-pink-600 font-normal">Rock</span>
-          </h1>
-        </div>
-        <div class="mt-6">
-          <div class="w-full inline-flex flex-col items-center">
-            <img
-              class="h-32 rounded-full"
-              src="https://i.pravatar.cc/150?u=52"
-              alt="avatar"
-            />
-            <h1 class="text-xl font-medium mt-3">Jane Doe</h1>
-            <div
-              class="items-center bg-pink-100 text-pink-500 rounded-lg cursor-pointer hover:shadow-sm flex px-3 py-1 mt-3"
-            >
-              <div class="text-sm">Online</div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 ml-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="mt-6">
-          <div>
-            <div class="relative flex w-full">
-              <span
-                class="z-10 h-full absolute bg-transparent rounded text-base items-center justify-center pl-3 py-4"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-4 text-gray-500"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  />
-                </svg>
-              </span>
-              <input
-                type="text"
-                placeholder="Search"
-                class="px-3 py-3 relative bg-gray-100 rounded-lg focus:outline-none w-full pl-10"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="mt-6">
-          <div class="inline-flex">
-            <div>Active Tickets</div>
-          </div>
-        </div>
+        <Sidebar />
       </div>
       <div class="w-1/2 bg-gray-100 overflow-y-auto rounded-lg p-8">
         <p>
@@ -196,19 +129,22 @@
         </p>
       </div>
       <div class="w-1/4 p-8">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab expedita
-        consequatur accusamus nulla dolore consectetur vel repellendus quaerat
-        explicabo a corporis, vero, maiores dolorum. Quas dolorem nostrum harum
-        qui quod.
+        <ChatBlock />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Sidebar from "@/components/Sidebar";
+import ChatBlock from "@/components/ChatBlock";
+
 export default {
   name: "App",
-  components: {},
+  components: {
+    Sidebar,
+    ChatBlock,
+  },
 };
 </script>
 
