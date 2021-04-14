@@ -67,7 +67,7 @@
       >
         <div class="flex items-center">
           <div
-            class="h-12 w-12 rounded-full bg-pink-400 flex items-center justify-center"
+            class="h-12 w-12 rounded-full bg-pink-300 flex items-center justify-center"
           >
             <div class="p-3 text-lg font-semibold text-white">
               {{ getRandomAvatarLetter().toUpperCase() }}
@@ -102,7 +102,7 @@ export default {
           time: "02:12 AM",
         },
         {
-          id: "#12543",
+          id: "#18543",
           avatar: this.getRandomAvatarLetter(),
           content: "hey there, could you...",
           time: "11:21 AM",

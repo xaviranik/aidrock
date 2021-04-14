@@ -12,8 +12,8 @@
             Open
           </div>
         </div>
-        <div class="flex items-center">
-          <div class="bg-pink-100 text-pink-600 px-4 py-2 rounded-lg shadow">
+        <div class="flex items-center text-sm">
+          <div class="bg-green-100 text-green-600 px-4 py-2 rounded-lg shadow">
             Messages
           </div>
           <div class="rounded-lg ml-4 px-4 py-2">Participants</div>
@@ -60,7 +60,9 @@
             ></path>
           </svg>
 
-          <div class="ml-4 p-3 bg-pink-600 rounded-full text-white">
+          <div
+            class="ml-4 p-3 bg-green-500 rounded-full shadow-lg hover:shadow-xl text-white"
+          >
             <svg
               class="h-5"
               fill="currentColor"

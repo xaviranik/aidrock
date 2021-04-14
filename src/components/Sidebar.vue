@@ -16,7 +16,7 @@
         <div
           class="items-center bg-green-100 text-green-500 rounded-lg cursor-pointer hover:shadow-sm flex px-3 py-1 mt-3"
         >
-          <div class="text-sm">Online</div>
+          <div class="text-sm font-medium text-green-600">Online</div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-4 ml-1"
