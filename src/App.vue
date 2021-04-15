@@ -1,7 +1,7 @@
 <template>
   <div class="flex h-screen bg-gray-200 text-gray-600" id="app">
     <div
-      class="flex overflow-hidden bg-white container my-12 m-auto rounded-lg p-8 shadow-2xl"
+      class="flex overflow-hidden bg-white container my-12 m-auto rounded-lg p-8 shadow-md"
     >
       <div class="w-1/4 p-8">
         <Sidebar />

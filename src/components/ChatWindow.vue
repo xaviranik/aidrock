@@ -1,7 +1,7 @@
 <template>
   <div class="h-full relative">
     <div
-      class="absolute top-0 left-0 w-full rounded-lg bg-white bg-opacity-90 backdrop-filter backdrop-blur-sm border-2 border-gray-100 py-4 px-4"
+      class="absolute z-20 top-0 left-0 w-full rounded-lg bg-white bg-opacity-90 backdrop-filter backdrop-blur-sm border-2 border-gray-100 py-4 px-4"
     >
       <div class="flex items-center justify-between text-sm font-medium">
         <div class="flex items-center ml-2">
@@ -21,7 +21,67 @@
       </div>
     </div>
     <div class="h-full rounded-lg px-6 overflow-y-auto pt-24">
-      tio id maxime corporis voluptate vero, facilis, voluptatem vel!
+      <div>
+        <div class="text-sm flex mt-2">
+          <img class="h-10 rounded-full" src="https://i.pravatar.cc/150?u=23" />
+          <div
+            class="relative bg-white shadow-sm rounded-lg p-4 speech-bubble left ml-4"
+          >
+            <p class="font-medium">
+              Marks Richard
+              <span class="text-xs text-gray-300 ml-1 font-light"
+                >2 minutes ago</span
+              >
+            </p>
+            <blockquote class="text-sm mt-2">
+              Hello there, would you please help with the new order status?
+            </blockquote>
+          </div>
+        </div>
+        <div class="text-sm flex mt-2">
+          <img class="h-10 rounded-full" src="https://i.pravatar.cc/150?u=23" />
+          <div
+            class="relative bg-white shadow-sm rounded-lg p-4 speech-bubble left ml-4"
+          >
+            <p class="font-medium">
+              Marks Richard
+              <span class="text-xs text-gray-300 ml-1 font-light"
+                >2 minutes ago</span
+              >
+            </p>
+            <blockquote class="text-sm mt-2">
+              I can't figure that out.
+            </blockquote>
+          </div>
+        </div>
+        <div class="text-sm flex justify-end mt-2">
+          <div class="relative bg-white shadow-sm rounded-lg p-4 ml-4">
+            <p class="font-medium">
+              Jon Snow
+              <span class="text-xs text-gray-300 ml-1 font-light"
+                >2 minutes ago</span
+              >
+            </p>
+            <blockquote class="text-sm mt-2">
+              First of all, you have to turn on the new order status from your
+              dashboard.
+            </blockquote>
+          </div>
+        </div>
+        <div class="text-sm flex justify-end mt-2">
+          <div class="relative bg-white shadow-sm rounded-lg p-4 ml-4">
+            <p class="font-medium">
+              Jon Snow
+              <span class="text-xs text-gray-300 ml-1 font-light"
+                >1 minutes ago</span
+              >
+            </p>
+            <blockquote class="text-sm mt-2">
+              Then, you can use the new order status.
+            </blockquote>
+          </div>
+        </div>
+      </div>
     </div>
     <div
       class="absolute bottom-0 mr-4 left-0 w-full rounded-b-lg bg-white border-2 border-gray-100 py-4 px-4"
@@ -85,4 +145,29 @@
 export default {};
 </script>
 
-<style></style>
+<style>
+.speech-bubble.left:after,
+.speech-bubble.left:before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+.speech-bubble.left:after {
+  top: 16px;
+}
+.speech-bubble.left:before {
+  top: 14px;
+}
+.speech-bubble.left:after {
+  border: 8px solid transparent;
+  border-right: 8px solid #fdfdfe;
+  left: -8px;
+  border-left: none;
+}
+.speech-bubble.left:before {
+  border: 10px solid transparent;
+  border-right: 10px solid #e0e8ed;
+  left: -10px;
+  border-left: none;
+}
+</style>
